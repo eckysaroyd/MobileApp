@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<body>
+<canvas id="mcanvas" style="border:1px solid gray; width:200px; height:100px;"/></canvas>
+     <input type="button" style="background-color:pink; width:200px; height:70px" onClick="shape('pink');">
+    <script>
+ var canvas = document.getElementById('mcanvas');
+var raf;
+
+
+function rainDrop() {
+  this.x = Math.random() * (canvas.width - (canvas.width-canvas.width)) + (canvas.width-canvas.width);
+  this.y = Math.random() * (canvas.height - (canvas.height-canvas.height)) + (canvas.height-canvas.height);
+  this.vx = -0.5;
+  this.vy = 1;
+  this.radius = 1;
+  this.color = 'blue';
+  this.gravity = 2;
+  this.gravitySpeed = 0;
+  this.bounce = 1;
+  this.ctx = canvas.getContext('2d');
+  this.draw = function() {
+    this.ctx.beginPath();
+    this.ctx.arc(this.x,this.y,this.radius,0,Math.PI * 2, true);
+    this.ctx.closePath();
+    this.ctx.fillStyle = this.color;
+    this.ctx.fill();
+  }
+  this.newPos = function() {
+        this.gravitySpeed += this.gravity;
+        this.x += this.vx;
+        this.y += this.vy + this.gravitySpeed;
+        this.hitBottom();
+    }
+  this.hitBottom = function() {
+    var rockbottom = canvas.height - this.radius;
+    if (this.y > rockbottom) {
+      this.y = rockbottom;
+      this.gravitySpeed = -(this.gravitySpeed/1.5 * this.bounce);
+    }
+  }
+}
+
+
+var balls = [];
+
+for(var i=0; i<150; i++)
+{
+	balls[i] = new rainDrop();
+}
+
+
+function drawf() {
+  balls[0].ctx.clearRect(0,0, canvas.width, canvas.height);
+  balls.forEach(function(b) {
+        b.draw();
+        b.newPos();});
+
+  raf = window.requestAnimationFrame(drawf);
+}
+
+canvas.addEventListener('mouseover', function(e) {
+  raf = window.requestAnimationFrame(drawf);
+});
+
+
+    </script>
+  
+</body>
+</html>

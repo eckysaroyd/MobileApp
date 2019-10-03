@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Document</title>
+</head>
+<body>
+<canvas id="v1" style="width:600px; height:500px;border:1px solid black;"></canvas>
+<div>
+
+    <input id="c1" name="red" type=button onclick="change('red')" style="width:50px; height:50px;background-color:red;float:left;">
+
+
+    <input id="c2" name="green" type=button onclick="change('green')" style="width:50px; height:50px;background-color:green;float:left;">
+
+
+    <input id="c3" name="blue" type=button onclick="change('blue')" style="width:50px; height:50px;background-color:blue;float:left;" >
+
+
+    <input id="c4" name="yellow" type=button onclick="change('yellow')" style="width:50px; height:50px;background-color:yellow;float:left;" >
+
+<script>
+
+function change(color) {
+    var canvas = document.getElementById("v1");
+    var p =canvas.getContext("2d");
+    p.clearRect(0, 0, canvas.width, canvas.height);
+    p.arc(150,80,50,0,2*Math.PI);
+    p.fillStyle=color;
+    p.fill();
+    p.stroke();
+   alert(color);
+    
+    }
+</script>
+</div>
+</body>
+</html>

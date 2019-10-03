@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+     <canvas id="mycanvas" width="500" height="200" style="border:5px solid black height=300 width=300"></canvas>
+    
+    <input type="button" style="background-color:red;" onClick="shape('red');">
+     <input type="button" style="background-color:blue;" onClick="shape('blue');">
+     <input type="button" style="background-color:orange;" onClick="shape('orange');">
+     <input type="button" style="background-color:green;" onClick="shape('green');">
+     <input type="button" style="background-color:pink;" onClick="shape('pink');">
+    <script>
+        function shape(color)
+        {
+           
+            var c=document.getElementById("mycanvas");
+            var ct=c.getContext("2d");
+           ct.fillStyle = color;
+           // ct.fillRect(0,0,200,300);
+       //     ct.fillRect(0,0,c.width,c.height);                  
+        ct.fillText("hi",100,200,90);
+        
+        }
+
+    </script>
+  
+</body>
+</html>

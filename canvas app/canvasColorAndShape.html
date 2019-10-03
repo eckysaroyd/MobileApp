@@ -1,0 +1,77 @@
+<html>
+<head>
+	<title>Background color</title>
+
+	<script>
+    	function changecolor(color){
+        document.getElementById("can").style.backgroundColor = color;
+    }
+    </script>
+
+    <script>
+    	h1
+    	{
+    		
+    	}
+    </script>
+</head>
+<body>
+<canvas id="can" width=500 height=500 style="border: 2px maroon dashed">
+	
+</canvas>
+<br>
+<h3 style="font-family:segoe script;">Change different <b>colors</b> of shapes</h3>
+
+<script>
+	function circle(va)
+	{
+		var c= document.getElementById("can");
+		var ct=c.getContext("2d");
+		ct.beginPath();
+		ct.arc(200,200,100,0,2*Math.PI);
+		ct.fillStyle = va;
+		ct.fill();
+		ct.closePath();
+	}
+
+	function rect(va)
+	{
+		var c= document.getElementById("can");
+		var ct=c.getContext("2d");
+		ct.beginPath();
+		ct.fillStyle = va;
+		ct.fillRect(150,300,200,100);	
+		ct.fill();
+		ct.closePath();
+	}
+
+	function clr()
+	{
+		var a = document.getElementById("can");
+		var b = a.getContext("2d");
+		b.clearRect(0,0,can.height,can.width);
+	}
+</script>
+
+        <h1 style="font-family:courier New;"> first Shape</h1>
+        <hr style="width: 100%; height: 2px; background-color:black " >
+        <button onclick="circle('blue')" style="background-color: blue">blue </button>
+        <button onclick="circle('red')" style="background-color: red">red </button>
+        <button onclick="circle('pink')" style="background-color: pink">pink </button>
+        <button onclick="circle('yellow')" style="background-color: yellow">yellow </button>
+        <button onclick="circle('green')" style="background-color: green">green </button>
+
+                <button onclick="clr()" style="background-color: green">clear</button>
+                   <br>
+        <h1 style="font-family:courier New;"> second Shape</h1>
+        <hr style="width: 100%; height: 2px; background-color:black " >
+        <button onclick="rect('blue')" style="background-color: blue">blue </button>
+        <button onclick="rect('red')" style="background-color: red">red </button>
+        <button onclick="rect('pink')" style="background-color: pink">pink </button>
+        <button onclick="rect('yellow')" style="background-color: yellow">yellow </button>
+        <button onclick="rect('green')" style="background-color: green">green </button>
+
+                <button onclick="clr()" style="background-color: green">clear</button>
+
+</body>
+</html>
