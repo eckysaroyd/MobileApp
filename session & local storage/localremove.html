@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script type="text/javascript">
+      if (localStorage.hits) {
+        localStorage.hits = Number(localStorage.hits) + 1;
+      } else {
+        localStorage.hits = 1;
+      }
+      document.write("total hits : " + localStorage.hits);
+
+      function clearlocal() {
+        localStorage.clear();
+        if (localStorage.hits) {
+          localStorage.hits = Number(localStorage.hits) + 1;
+        } else {
+          localStorage.hits = 1;
+        }
+        document.write("total hits : " + localStorage.hits);
+      }
+    </script>
+	<hr/>
+	<br/>
+    <button onclick=" clearlocal()">clear local storage</button>
+    <p>working with local storage</p>
+  </body>
+</html>
