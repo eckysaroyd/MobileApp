@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+<script type="text/javascript">
+if(sessionStorage.hits )
+{
+sessionStorage.hits=Number(sessionStorage.hits)+1;
+}
+else {
+sessionStorage.hits=1;
+}
+document.write("total hits : "+ sessionStorage.hits);
+</script>
+<p>working with session storage</p>
+</body>
+</html>
