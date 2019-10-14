@@ -8,7 +8,7 @@
 
 <button onclick="getLocation()">click Me</button>
 <div>
-<p id="demo"></p>
+<p id="mapholder"></p>
 <div>
 <script>
 var x = document.getElementById("demo");
@@ -22,8 +22,12 @@ function getLocation() {
 }
 
 function showPosition(position) {
-  x.innerHTML = "Latitude: " + position.coords.latitude + 
-  "<br>Longitude: " + position.coords.longitude;
+  var latlon = position.coords.latitude + "," + position.coords.longitude;
+
+  var img_url = "https://maps.googleapis.com/maps/api/staticmap?center=
+  "+latlon+"&zoom=14&size=400x300&sensor=false&key=YOUR_KEY";
+
+  document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
 }
 </script>
 
