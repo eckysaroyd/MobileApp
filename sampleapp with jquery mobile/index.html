@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width = device-width, initial-scale = 1" />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <style>
+      .ui-dialog.dialog-actionsheet .ui-dialog-contain {
+        margin-top: 0;
+      }
+      .header {
+        color: bisque;
+        background-color: #3a87ca;
+        height: 90px;
+        padding-top: 40px;
+        font-size: 30px;
+      }
+      .dialog {
+        color: white;
+        background-color: cornflowerblue;
+      }
+      .footer {
+        color: bisque;
+        background-color: #3a87ca;
+        height: 90px;
+        padding-top: 40px;
+        font-size: 30px;
+      }
+      .box1 {
+        color: bisque;
+        background-color: #3a87ca;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div data-role="page" id="page1">
+      <div data-role="header" data-theme="b" class="header">
+        <h2>Open a New Page Add</h2>
+      </div>
+
+      <div role="main" class="ui-content">
+        <a href="#page2" class="ui-btn ui-corner-all ui-btn-inline dialog">
+          Open Dialog</a
+        >
+        <a href="#page3" class="ui-btn ui-corner-all ui-btn-inline">
+          Second Dialog</a
+        >
+      </div>
+
+      <div data-role="footer" class="footer">
+        <h4>Footer</h4>
+      </div>
+    </div>
+
+    <div
+      data-role="page"
+      data-dialog="true"
+      id="page2"
+      data-corners="false"
+      data-overlay-theme="b"
+    >
+      <div data-role="header" class="box1">
+        <h1>First Dialogs</h1>
+      </div>
+
+      <div role="main" class="ui-content box1">
+        <p>
+          Sample Page which we have
+        </p>
+
+        <a data-rel="back" class="ui-btn ui-corner-all ui-btn-inline">Back</a>
+      </div>
+    </div>
+
+    <div
+      data-role="page"
+      class="dialog-actionsheet"
+      data-dialog="true"
+      id="page3"
+    >
+      <div role="main" class="ui-content">
+        <h3>SEcond dialbox</h3>
+        <a
+          href="#page4"
+          data-transition="slidedown"
+          class="ui-btn ui-shadow 
+            ui-corner-all ui-btn-b"
+          >First name</a
+        >
+        <a
+          href="#page4"
+          data-transition="slidedown"
+          class="ui-btn ui-shadow 
+            ui-corner-all ui-btn-b"
+          >Email</a
+        >
+
+        <a
+          href="#page4"
+          data-transition="slidedown"
+          class="ui-btn ui-shadow 
+            ui-corner-all ui-btn-b"
+          >Number</a
+        >
+
+        <a data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-a">
+          Cancel</a
+        >
+      </div>
+    </div>
+
+    <div
+      data-role="page"
+      class="dialog-actionsheet"
+      data-dialog="true"
+      id="page4"
+    >
+      <div role="main" class="ui-content">
+        <h3>Dtails uploded sucsessfuly</h3>
+        <a href="#page1" class="ui-btn ui-shadow ui-corner-all ui-btn-a">
+          View my page</a
+        >
+
+        <a href="#page1" class="ui-btn ui-shadow ui-corner-all ui-btn-a">
+          Done</a
+        >
+      </div>
+    </div>
+  </body>
+</html>

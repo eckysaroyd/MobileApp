@@ -1,0 +1,13 @@
+1. write app code to generate customized alert in jquery mobile(like when i click close it can close and go to the previously screen)
+
+2.Write app code to customize multiple swatches in jquery mobile and apply it on multiple pages
+
+
+3. write An app code pon touch start it must load a map
+
+
+
+
+on touc move it must show fat, long
+
+
