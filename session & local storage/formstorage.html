@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width = device-width, initial-scale = 1" />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+      .neim {
+        margin-bottom: 30px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div data-role="page">
+      <div data-role="header">
+        <h2>Saving Data Form</h2>
+      </div>
+
+      <div data-role="main" class="ui-content">
+        <form method="post">
+          <div class="ui-field-contain">
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" id="fname" /><br /><br />
+
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" id="lname" /><br /><br />
+
+            <label for="email">Email</label>
+            <input type="text" name="" id="" /><br /><br />
+
+            <label for="select">Select City</label>
+            <select name="select" id="select">
+              <option value="1">Punjab</option>
+              <option value="2">Pune</option>
+              <option value="3">Chennai</option>
+              <option value="4">Bangalore</option>
+              <option value="5">Mumbai</option>
+              <option value="5">Delhi</option>
+            </select>
+            <br /><br />
+
+            <input
+              type="button"
+              onclick="store();"
+              value="Submit"
+              data-inline="true"
+            />
+          </div>
+        </form>
+      </div>
+      <script type="text/javascript">
+        function store() {
+          var fname = document.getElementById("fname").value;
+
+          localStorage.setItem("fname", input.value);
+
+          var lname = document.getElementById("lname").value;
+          localStorage.setItem("lname", input.value);
+
+          var email = document.getElementById("email").value;
+          localStorage.setItem("email", input.value);
+
+          var input = document.getElementById("select").value;
+          localStorage.setItem("select", input.value);
+        }
+      </script>
+      <div data-role="content">
+        <h2>We Add the following Form</h2>
+        <script>
+          document.write(fname);
+        </script>
+      </div>
+      <div data-role="footer">
+        <h2>thank you for choose us</h2>
+      </div>
+    </div>
+  </body>
+</html>

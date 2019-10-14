@@ -8,34 +8,50 @@
     />
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+      .neim {
+        margin-bottom: 30px;
+      }
+    </style>
   </head>
 
   <body>
     <div data-role="page">
       <div data-role="header">
-        <h2>Form Field contain</h2>
+        <h2>Saving Data Form</h2>
       </div>
 
       <div data-role="main" class="ui-content">
-        <form method="post" action="jquery_mobile/demo.php">
+        <form method="post">
           <div class="ui-field-contain">
             <label for="fname">First Name</label>
-            <input type="text" name="fname" />
+            <input type="text" name="fname" /><br /><br />
+
             <label for="lname">Last Name</label>
-            <input type="text" name="lname" />
+            <input type="text" name="lname" /><br /><br />
+
+            <label for="email">Email Address</label>
+            <input type="text" name="email" /><br /><br />
 
             <label for="select">Select City</label>
             <select name="select" id="select">
-              <option value="1">Belgaum</option>
+              <option value="1">Punjab</option>
               <option value="2">Pune</option>
               <option value="3">Chennai</option>
               <option value="4">Bangalore</option>
               <option value="5">Mumbai</option>
+              <option value="5">Delhi</option>
             </select>
+            <br /><br />
 
-            <input type="submit" value="Submit" data-inline="true" />
+            <center>
+              <input type="submit" value="Submit" data-inline="true" />
+            </center>
           </div>
         </form>
+      </div>
+      <div data-role="footer">
+        <h2>thank you for choose us</h2>
       </div>
     </div>
   </body>
