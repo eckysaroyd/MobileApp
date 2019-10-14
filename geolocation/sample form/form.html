@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width = device-width, initial-scale = 1" />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  </head>
+
+  <body>
+    <div data-role="page">
+      <div data-role="header">
+        <h2>Form Field contain</h2>
+      </div>
+
+      <div data-role="main" class="ui-content">
+        <form method="post" action="jquery_mobile/demo.php">
+          <div class="ui-field-contain">
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" />
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" />
+
+            <label for="select">Select City</label>
+            <select name="select" id="select">
+              <option value="1">Belgaum</option>
+              <option value="2">Pune</option>
+              <option value="3">Chennai</option>
+              <option value="4">Bangalore</option>
+              <option value="5">Mumbai</option>
+            </select>
+
+            <input type="submit" value="Submit" data-inline="true" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
