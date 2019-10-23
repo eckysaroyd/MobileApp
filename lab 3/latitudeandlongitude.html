@@ -1,0 +1,57 @@
+Live Demo
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width = device-width, initial-scale = 1" />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <style>
+      
+    </style>
+  </head>
+
+  <body>
+    <div data-role="page" >
+      <div data-role="header" data-theme="b">
+        <h2>Music player</h2>
+      </div>
+      <div data-role="content" data-theme="a">
+        <p>Click the button to get langitude and latitude.</p>
+
+        <button onclick="getLocation()">click here</button>
+    
+        <p id="demo"></p>
+    
+        <script>
+          var x = document.getElementById("demo");
+    
+          function getLocation() {
+            if (navigator.geolocation) {
+              navigator.geolocation.watchPosition(showPosition);
+            } else {
+              x.innerHTML = "Geolocation is not supported by this browser.";
+            }
+          }
+    
+          function showPosition(position) {
+            x.innerHTML =
+              "Latitude: " +
+              position.coords.latitude +
+              "<br>Longitude: " +
+              position.coords.longitude;
+          }
+        </script>
+    </div>
+
+        <div data-role="footer" data-theme="c">
+            <h4>Footer</h4>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
