@@ -1,0 +1,21 @@
+<html>
+<head>
+	 
+	   <script src="https://maps.googleapis.com/maps/api/js"></script>
+	
+<script>
+function loadmap()
+{
+var mapoption={
+center:new google.maps.LatLng(17.609993,83.205654),
+zoom:100,
+mapTypeId:google.maps.MapTypeId.ROADMAP
+};
+var map=new google.maps.Map(document.getElementById("simple"),mapoption);
+}
+	   </script>
+</head>
+<body onload="loadmap();">
+ <div id="simple" style="width:900px; height:580px;">
+</body>
+</html>

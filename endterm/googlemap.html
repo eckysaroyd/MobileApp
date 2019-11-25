@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js">
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script>
+		function loadMap(lt,ln){
+          var mapOptions={
+
+          	center:new google.maps.LatLng(lt,ln),
+            zoom:12,
+            mapTypeId:google.maps.MapTypeId.ROADMAP
+          };
+
+          var map=new google.maps.Map(document.getElementById("sample"),mapOptions);
+
+}
+    function showPosition(){
+    	if(navigator.geolocation)
+    	{
+    		navigator.geolocation.getCurrentPosition(function(position){
+    			var x=position.coords.latitude;
+    			var y=position.coords.longitude;
+
+    			alert("longitude"+x);
+    			alert("latitude"+y);
+
+    			loadMap(x,y);
+
+    		});
+    	}
+    	else{
+    		alert("Sorry");
+    	}
+		}
+    
+
+
+
+	</script>
+</head>
+<body>
+  <input type="button" name="" onclick="showPosition();" value="Get Location">
+<div id="sample" style="width: 500px;height: 580px;"></div>
+
+</body>
+</html>

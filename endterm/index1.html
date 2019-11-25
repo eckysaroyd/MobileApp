@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>shape</title>
+    </head>
+    <body>
+        <script>
+       
+            
+            function cir()
+            {
+                var c=document.getElementById("can1");
+                var cd=c.getContext("2d");
+                
+              
+                cd.beginPath();
+                cd.arc(300,200,50,0,2*Math.PI);
+                cd.stroke();
+                cd.closePath();
+                
+                
+                
+            }
+         function text()
+            {
+                var e=document.getElementById("can1");
+                var fg=document.getElementById("name").value;
+                var h=e.getContext("2d");
+                
+                h.fillText(fg,300,200,400);  
+                h.fillStyle="red";
+                h.fillStyle="green";
+                h.fillStyle="blue";
+            }
+            
+        </script>
+        
+        
+    <canvas id="can1" style="border:1px solid black" height="450" width="450"></canvas>
+         
+    <input type="button" style="background-color: red;" onclick="shape('red')";>
+         
+        
+        <button onclick="cir();">circle</button>
+        <input type="text" name="enter" id="name">
+		
+        <input type="button" value="submit" onclick="text();">
+        <input type="button" value="submit" name="red style="background-color: red;" onclick="text();">
+        <input type="button" value="submit" name="green"style="background-color: green;" onclick="text();">
+        <input type="button" value="submit" name="blue" style="background-color: blue;" onclick="text();">
+    </body>
+</html>

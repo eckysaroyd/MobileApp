@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+ 
+<html>
+    <head>
+	<script>
+	function srat1()
+	{
+	document.write("<img src='a.jpg'></img>");
+	
+	}
+	function move1()
+	{
+	alert("move");
+	}
+	function can()
+	{
+     alert("touch to cancel");
+	
+	}
+	
+	
+	
+	
+	</script>
+	
+   </head>
+    <body bgcolor="green" ontouchend="can();">
+	<p ontouchmove="move1();">move</p>
+	<p ontouchstart="srat1();">start</p>
+	<p ontouchend="can();">cancel</p>
+	
+    </body>
+</html>
