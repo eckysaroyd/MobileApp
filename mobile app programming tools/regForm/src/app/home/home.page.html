@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title color="tertiary"> <ion-icon ios="ios-cart" color="tertiary" md="md-cart"></ion-icon>Sharmake cart</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content >
+<ion-grid>
+  <ion-row>
+    <ion-col size-md="">
+      <div>
+	  <b>ADD TRANSPORT BILL </b>
+     
+      </div>
+    </ion-col>
+    <ion-col size-md="">
+      <div>
+          <input type="text" placeholder=" add only no eg : 1000">
+      </div>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col size-md="">
+      <div>
+	  <b> ADD RENT BILL</b>
+     
+      </div>
+    </ion-col>
+    <ion-col size-md="">
+      <div>
+          <input type="text" placeholder=" add only no eg : 1000">
+      </div>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col size-md="">
+      <div>
+	  <b>ADD ELECTRONIC BILL</b>
+     
+      </div>
+    </ion-col>
+    <ion-col size-md="">
+      <div>
+          <input type="text" placeholder=" add only no eg : 1000">
+      </div>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col size-md="">
+      <div>
+	  <b>ADD CAR TO KIT </b>
+     
+      </div>
+    </ion-col>
+    <ion-col size-md="">
+      <div>
+          <input type="text" placeholder=" add only no eg : 1000">
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+  <ion-button  [routerLink]="['/detail']">add to cart</ion-button>
+  <ion-button  [routerLink]="['/detail']" color="danger"><ion-icon name="trash"></ion-icon>Delete cart</ion-button>
+</ion-content>
