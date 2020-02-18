@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="PROJECTApplication.MainPage">
+
+    <StackLayout>
+        <Entry x:Name="item1" Placeholder="enter first name"></Entry>
+        <Label Text="Select price for item"  x:Name="lbl1"></Label>
+        <Slider Minimum="0" Maximum="50000" ValueChanged="changedone1"></Slider>
+
+        <Entry x:Name="item2" Placeholder="enter first name"></Entry>
+        <Label Text="Select price for item"  x:Name="lbl2"></Label>
+        <Slider Minimum="0" Maximum="50000" ValueChanged="changedone2"></Slider>
+
+        <Entry x:Name="item3" Placeholder="enter first name"></Entry>
+        <Label Text="Select price for item"  x:Name="lbl3"></Label>
+        <Slider Minimum="0" Maximum="50000" ValueChanged="changedone3"></Slider>
+        
+        <Button Text="button" Clicked="buton1"></Button>
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App2.MainPage">
+
+    <StackLayout>
+        
+        
+        <Label Text="FOOD ORDER SYSTEM"></Label>
+
+        <Label Text="SELECT PRICE RANGE"></Label>
+
+        
+        <Label FontSize="Medium">Select the range prize between 500 to 1000</Label>
+        <Label x:Name="item1" FontSize="Medium"></Label>
+        <Slider x:Name="sld1" Minimum="500" Maximum="1000" ValueChanged="onvaluechange" />
+
+        <Button Clicked="submit" Text="Submit" />
+
+    </StackLayout>
+
+</ContentPage>

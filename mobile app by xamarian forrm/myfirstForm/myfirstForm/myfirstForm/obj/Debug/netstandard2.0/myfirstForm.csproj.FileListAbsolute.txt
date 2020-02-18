@@ -1,0 +1,13 @@
+C:\Users\HP\Desktop\MobileApp\mobile app by xamarian forrm\myfirstForm\myfirstForm\myfirstForm\bin\Debug\netstandard2.0\myfirstForm.deps.json
+C:\Users\HP\Desktop\MobileApp\mobile app by xamarian forrm\myfirstForm\myfirstForm\myfirstForm\bin\Debug\netstandard2.0\myfirstForm.dll
+C:\Users\HP\Desktop\MobileApp\mobile app by xamarian forrm\myfirstForm\myfirstForm\myfirstForm\bin\Debug\netstandard2.0\ref\myfirstForm.dll
+C:\Users\HP\Desktop\MobileApp\mobile app by xamarian forrm\myfirstForm\myfirstForm\myfirstForm\bin\Debug\netstandard2.0\myfirstForm.pdb
+C:\Users\HP\Desktop\MobileApp\mobile app by xamarian forrm\myfirstForm\myfirstForm\myfirstForm\obj\Debug\netstandard2.0\myfirstForm.csprojAssemblyReference.cache
+C:\Users\HP\Desktop\MobileApp\mobile app by xamarian forrm\myfirstForm\myfirstForm\myfirstForm\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\HP\Desktop\MobileApp\mobile app by xamarian forrm\myfirstForm\myfirstForm\myfirstForm\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\HP\Desktop\MobileApp\mobile app by xamarian forrm\myfirstForm\myfirstForm\myfirstForm\obj\Debug\netstandard2.0\myfirstForm.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\MobileApp\mobile app by xamarian forrm\myfirstForm\myfirstForm\myfirstForm\obj\Debug\netstandard2.0\myfirstForm.AssemblyInfo.cs
+C:\Users\HP\Desktop\MobileApp\mobile app by xamarian forrm\myfirstForm\myfirstForm\myfirstForm\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\HP\Desktop\MobileApp\mobile app by xamarian forrm\myfirstForm\myfirstForm\myfirstForm\obj\Debug\netstandard2.0\myfirstForm.dll
+C:\Users\HP\Desktop\MobileApp\mobile app by xamarian forrm\myfirstForm\myfirstForm\myfirstForm\obj\Debug\netstandard2.0\ref\myfirstForm.dll
+C:\Users\HP\Desktop\MobileApp\mobile app by xamarian forrm\myfirstForm\myfirstForm\myfirstForm\obj\Debug\netstandard2.0\myfirstForm.pdb

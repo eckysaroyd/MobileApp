@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App3_ca_practice.MainPage">
+
+    <StackLayout>
+        <Entry x:Name="itm1" Placeholder="Enter Item 1"/>
+        <Label FontSize="Medium">Select price of item 1</Label>
+        <Label x:Name="lbl1" FontSize="Medium"></Label>
+        <Slider x:Name="sd1" Minimum="0" Maximum="50000" ValueChanged="onvaluechange" />
+
+        <Entry x:Name="itm2" Placeholder="Enter Item 2"/>
+        <Label FontSize="Medium">Select price of item 2</Label>
+        <Label x:Name="lbl2" FontSize="Medium"></Label>
+        <Slider x:Name="sd2" Minimum="0" Maximum="50000" ValueChanged="onvaluechange2" />
+
+        <Entry x:Name="itm3" Placeholder="Enter Item 3"/>
+        <Label FontSize="Medium">Select price of item 3</Label>
+        <Label x:Name="lbl3" FontSize="Medium"></Label>
+        <Slider x:Name="sd3" Minimum="0" Maximum="50000" ValueChanged="onvaluechange3" />
+
+        <Button Clicked="submit" Text="Submit" />
+    </StackLayout>
+</ContentPage>

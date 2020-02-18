@@ -1,0 +1,13 @@
+C:\Users\HP\Desktop\MobileApp\mobile app by xamarian forrm\PROJECTApplication\PROJECTApplication\PROJECTApplication\bin\Debug\netstandard2.0\PROJECTApplication.deps.json
+C:\Users\HP\Desktop\MobileApp\mobile app by xamarian forrm\PROJECTApplication\PROJECTApplication\PROJECTApplication\bin\Debug\netstandard2.0\PROJECTApplication.dll
+C:\Users\HP\Desktop\MobileApp\mobile app by xamarian forrm\PROJECTApplication\PROJECTApplication\PROJECTApplication\bin\Debug\netstandard2.0\ref\PROJECTApplication.dll
+C:\Users\HP\Desktop\MobileApp\mobile app by xamarian forrm\PROJECTApplication\PROJECTApplication\PROJECTApplication\bin\Debug\netstandard2.0\PROJECTApplication.pdb
+C:\Users\HP\Desktop\MobileApp\mobile app by xamarian forrm\PROJECTApplication\PROJECTApplication\PROJECTApplication\obj\Debug\netstandard2.0\PROJECTApplication.csprojAssemblyReference.cache
+C:\Users\HP\Desktop\MobileApp\mobile app by xamarian forrm\PROJECTApplication\PROJECTApplication\PROJECTApplication\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\HP\Desktop\MobileApp\mobile app by xamarian forrm\PROJECTApplication\PROJECTApplication\PROJECTApplication\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\HP\Desktop\MobileApp\mobile app by xamarian forrm\PROJECTApplication\PROJECTApplication\PROJECTApplication\obj\Debug\netstandard2.0\PROJECTApplication.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\MobileApp\mobile app by xamarian forrm\PROJECTApplication\PROJECTApplication\PROJECTApplication\obj\Debug\netstandard2.0\PROJECTApplication.AssemblyInfo.cs
+C:\Users\HP\Desktop\MobileApp\mobile app by xamarian forrm\PROJECTApplication\PROJECTApplication\PROJECTApplication\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\HP\Desktop\MobileApp\mobile app by xamarian forrm\PROJECTApplication\PROJECTApplication\PROJECTApplication\obj\Debug\netstandard2.0\PROJECTApplication.dll
+C:\Users\HP\Desktop\MobileApp\mobile app by xamarian forrm\PROJECTApplication\PROJECTApplication\PROJECTApplication\obj\Debug\netstandard2.0\ref\PROJECTApplication.dll
+C:\Users\HP\Desktop\MobileApp\mobile app by xamarian forrm\PROJECTApplication\PROJECTApplication\PROJECTApplication\obj\Debug\netstandard2.0\PROJECTApplication.pdb
