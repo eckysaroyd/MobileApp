@@ -1,0 +1,17 @@
+<ion-view title="History">
+  <ion-content>
+    <ion-list>
+        <ion-item ng-repeat="item in items">
+          <ion-option-button ng-click="removeItem(item.key)" class="button-assertive"><i class="icon ion-ios-trash"></i> </ion-option-button>
+
+          <div class=" item-avatar" href="#">
+            <img ng-src="img/op{{item.imageid}}.png">
+            <h2>{{item.equation}}</h2>
+            <p>{{item.date}}</p>
+
+          </div>
+        </ion-item>
+    </ion-list>
+
+  </ion-content>
+</ion-view>

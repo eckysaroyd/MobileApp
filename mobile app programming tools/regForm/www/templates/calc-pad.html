@@ -1,0 +1,39 @@
+
+<ion-view view-title="Calculator">
+
+  <ion-content>
+
+    <div class="">
+      <div class="card">
+        <span class="result item item-text-wrap right">{{result}}</span>
+      </div>
+      <div class="row">
+        <num-pad calc="clear" class="col-20 button button-energized button-small" val="AC"></num-pad>
+      </div>
+        <div class="row">
+          <num-pad calc="sendInput" val="7"></num-pad>
+          <num-pad calc="sendInput" val="8"></num-pad>
+          <num-pad calc="sendInput" val="9"></num-pad>
+          <num-pad calc="operate" class="button-calm" val="/"></num-pad>
+      </div>
+      <div class="row">
+        <num-pad calc="sendInput" val="4"></num-pad>
+        <num-pad calc="sendInput" val="5"></num-pad>
+        <num-pad calc="sendInput" val="6"></num-pad>
+        <num-pad calc="operate" class="button-calm" val="x"></num-pad>
+      </div>
+      <div class="row">
+        <num-pad calc="sendInput" val="1"></num-pad>
+        <num-pad calc="sendInput" val="2"></num-pad>
+        <num-pad calc="sendInput" val="3"></num-pad>
+        <num-pad calc="operate" class="button-calm" val="-"></num-pad>
+      </div>
+      <div class="row">
+        <num-pad calc="sendInput" val="0"></num-pad>
+        <num-pad calc="handleDot" val="."></num-pad>
+        <num-pad calc="calculate" class="button-assertive" val="="></num-pad>
+        <num-pad calc="operate" class="button-calm" val="+"></num-pad>
+      </div>
+      </div>
+  </ion-content>
+</ion-view>

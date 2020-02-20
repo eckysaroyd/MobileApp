@@ -1,5 +1,11 @@
 {
-  "name": "regForm",
+  "name": "ionic-calculator",
   "integrations": {},
-  "type": "angular"
+  "type": "angular",
+  "watchPatterns": [
+    "scss/**/*",
+    "www/**/*",
+    "!www/lib/**/*",
+    "!www/**/*.map"
+  ]
 }
